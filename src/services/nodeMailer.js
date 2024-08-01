@@ -5,7 +5,7 @@ async function sendEmail(data) {
     return new Promise(async (resolve, reject) => {
         try {
 
-              console.log('hdhdh');
+              console.log(process.env.EMAIL, process.env.PASS);
             // Create a transporter
             let transporter = nodemailer.createTransport({
                 // Configure your email service provider or SMTP server here
