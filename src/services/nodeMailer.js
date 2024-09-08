@@ -19,6 +19,8 @@ async function sendEmail(data) {
              
             // Generate OTP
             const token = generateOTP();
+            console.log("USER OTP ==============>",token);
+            
             let verify = await Verify.findOne({email :data.email})
             if(verify){
                
